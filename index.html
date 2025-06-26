@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,56 +12,49 @@
     </header>
 
     <main>
-        <section id="luas-segitiga">
-            <h2>Hitung Luas Segitiga</h2>
-            <div class="gambar-segitiga">
-                <p>Rumus Luas Segitiga: L = 1/2 &times; alas &times; tinggi</p>
+        <div class="calculator-container">
+
+            <div class="calculation-selector">
+                <label for="calculationType">Pilih Jenis Perhitungan:</label>
+                <select id="calculationType">
+                    <option value="luas">Hitung Luas Segitiga</option>
+                    <option value="keliling">Hitung Keliling Segitiga</option>
+                </select>
             </div>
-            <form id="form-luas">
-                <label for="alas">Nilai Alas:</label>
-                <input type="number" id="alas" placeholder="Masukkan nilai alas" required>
 
-                <label for="tinggi">Nilai Tinggi:</label>
-                <input type="number" id="tinggi" placeholder="Masukkan nilai tinggi" required>
-
-                <button type="button" onclick="hitungLuas()">Hitung</button>
-            </form>
-            <div class="result-area">
-                <h3>Hasil Luas:</h3>
-                <p id="luas-rumus"></p>
-                <p id="luas-hasil"></p>
+            <div class="card" id="luasInputs" style="display: block;">
+                <h2>Hitung Luas Segitiga</h2>
+                <p>Rumus Luas Segitiga: L = 1/2 × Alas × Tinggi</p>
+                <label for="base">Nilai Alas:</label>
+                <input type="number" id="base" placeholder="Masukkan nilai alas">
+                <label for="height">Nilai Tinggi:</label>
+                <input type="number" id="height" placeholder="Masukkan nilai tinggi">
             </div>
-            <button type="button" onclick="resetLuas()">Reset</button>
-        </section>
 
-        <section id="keliling-segitiga">
-            <h2>Hitung Keliling Segitiga</h2>
-            <div class="gambar-segitiga">
-                <p>Rumus Keliling Segitiga: K = sisi1 + sisi2 + sisi3</p>
+            <div class="card" id="kelilingInputs" style="display: none;">
+                <h2>Hitung Keliling Segitiga</h2>
+                <p>Rumus Keliling Segitiga: K = Sisi A + Sisi B + Sisi C</p>
+                <label for="sideA">Nilai Sisi A:</label>
+                <input type="number" id="sideA" placeholder="Masukkan nilai sisi A">
+                <label for="sideB">Nilai Sisi B:</label>
+                <input type="number" id="sideB" placeholder="Masukkan nilai sisi B">
+                <label for="sideC">Nilai Sisi C:</label>
+                <input type="number" id="sideC" placeholder="Masukkan nilai sisi C">
             </div>
-            <form id="form-keliling">
-                <label for="sisi1">Nilai Sisi A:</label>
-                <input type="number" id="sisi1" placeholder="Masukkan nilai sisi A" required>
 
-                <label for="sisi2">Nilai Sisi B:</label>
-                <input type="number" id="sisi2" placeholder="Masukkan nilai sisi B" required>
+            <button id="calculateButton">Hitung</button>
 
-                <label for="sisi3">Nilai Sisi C:</label>
-                <input type="number" id="sisi3" placeholder="Masukkan nilai sisi C" required>
+            <div class="result-area" id="resultArea">
+                <h3>Hasil Perhitungan:</h3>
+                </div>
+            
+            <button id="resetButton">Reset</button>
 
-                <button type="button" onclick="hitungKeliling()">Hitung</button>
-            </form>
-            <div class="result-area">
-                <h3>Hasil Keliling:</h3>
-                <p id="keliling-rumus"></p>
-                <p id="keliling-hasil"></p>
-            </div>
-            <button type="button" onclick="resetKeliling()">Reset</button>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Kalkulator Segitiga. Dibuat oleh chagiya.</p>
+        <p>&copy; 2023 Kalkulator Segitiga. Dibuat oleh chagiya.</p>
     </footer>
 
     <script src="js/script.js"></script>
