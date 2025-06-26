@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    flex-wrap: wrap; /* Izinkan wrapping di layar kecil */
+    gap: 30px; /* Jarak antar bagian */
+}
+
+section {
+    flex: 1; /* Setiap bagian mengambil lebar yang sama */
+    min-width: 350px; /* Lebar minimum sebelum wrapping */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="number"] {
+    width: calc(100% - 22px); /* Sesuaikan dengan padding dan border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* Jarak antar tombol */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-area {
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid #cce5ff;
+    background-color: #e6f7ff;
+    border-radius: 4px;
+}
+
+.result-area h3 {
+    margin-top: 0;
+    color: #004085;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
